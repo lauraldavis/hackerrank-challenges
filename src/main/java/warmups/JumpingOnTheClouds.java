@@ -35,6 +35,7 @@ public class JumpingOnTheClouds {
         int jumps = 0;
         int i = 0;
 
+//        Use a while loop when you want to increment by different amounts
         while (i < c.length-1) {
             if (i+2 == c.length || c[i + 2] == 1) {
                 i++;
