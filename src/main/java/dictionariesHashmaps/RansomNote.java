@@ -105,4 +105,34 @@ public class RansomNote {
 //        System.out.println("Yes");
         return "Yes";
     }
+
+    /*
+    // The accepted solution for HackerRank submission is below
+    // Not sure how to implement the required void return with tests requiring a result...
+    // So left my original solution and including solution code for reference.
+
+    static void checkMagazine(String[] mag, String[] note) {
+        Map<String, Integer> dict = new HashMap<>();
+        for(int i=0;i<mag.length;i++) {
+            dict.putIfAbsent(mag[i], 0);
+            dict.put(mag[i], dict.get(mag[i])+1);
+        }
+
+        boolean wordMiss = false;
+        for(int i=0;i<note.length;i++) {
+           int freq;
+            if(!dict.containsKey(note[i]) || (freq = dict.get(note[i])) < 1) {
+                wordMiss = true;
+                break;
+            }
+
+            dict.put(note[i],freq-1);
+        }
+
+        if(!wordMiss)
+            System.out.println("Yes");
+        else
+            System.out.println("No");
+    }
+     */
 }
